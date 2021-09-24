@@ -15,8 +15,8 @@ RUN apk add --no-cache \
     git && \
     cd / && \
     git clone https://github.com/sysreq0/ring-hassio-frontyard.git && \
-    cd ring-hassio/ring_hassio && \
+    cd ring-hassio-frontyard/ring_hassio && \
     npm install --unsafe-perm && \
     chmod a+x run.sh
 
-CMD [ "/ring-hassio/ring_hassio/run.sh" ]
+CMD [ "/ring-hassio-frontyard/ring_hassio/run.sh" ]
